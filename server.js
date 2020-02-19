@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 
 import 'babel-polyfill';
 import ReflectionWithJsObject from './src/usingJSObject/controllers/Reflection';
-import ReflectionWithDB from './src/usingDB/controller/Reflection';
+import ReflectionWithDB from './src/usingDB/controllers/Reflection';
 
 dotenv.config();
 const Reflection = process.env.TYPE === 'db' ? ReflectionWithDB : ReflectionWithJsObject;
